@@ -96,7 +96,7 @@ function sendEmbed(bm_id) {
         .setDescription('')
         .addField('Set information: ', '`Song length: ' + response["data"][0]["total_length"].toMMSS() + '`\n`' + "BPM: " + response["data"][0]["bpm"] + '`', false)
         .addField('Difficulties: ', diff_formatted, false)
-        .addField('Direct download: ', ' [Official server](https://osu.ppy.sh/beatmapsets/' + bm_id + '/download) || [Nerinyan mirror](https://nerinyan.moe/d/' + bm_id + ') || [Bloodcat mirror](https://bloodcat.com/osu/s/' + bm_id + ')\n', false)
+        .addField('Direct download: ', ' [Official server](https://osu.ppy.sh/beatmapsets/' + bm_id + '/download) | [Nerinyan mirror](https://nerinyan.moe/d/' + bm_id + ') | [Bloodcat mirror](https://bloodcat.com/osu/s/' + bm_id + ')\n', false)
         .setColor([229,119,166])
         .setThumbnail(thumbnail)
         .setImage('https://assets.ppy.sh/beatmaps/' + bm_id + '/covers/cover.jpg')
